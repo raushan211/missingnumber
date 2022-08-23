@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	nums := []int{3, 0, 1}
+	nums := []int{0, 1}
 	arr := bubblesort(nums)
 
 	fmt.Println(missingNumber(arr))
@@ -15,7 +15,7 @@ func missingNumber(nums []int) int {
 			return i
 		}
 	}
-	return -1
+	return len(nums)
 }
 
 func bubblesort(nums []int) []int {
